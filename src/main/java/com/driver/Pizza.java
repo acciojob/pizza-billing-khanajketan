@@ -18,7 +18,8 @@ public class Pizza {
 
     public Pizza(Boolean isVeg){
         this.isVeg = isVeg;
-        if(isVeg == false) this.price = this.price + 50;
+        if(isVeg) this.price = 300;
+        else this.price = 400;
         // your code goes here
     }
 
@@ -41,10 +42,12 @@ public class Pizza {
         // your code goes here
 
         if(flag2 && !isDeluxe){
-            this.price = this.price + 70;
+
             if(isVeg){
+                this.price = this.price + 70;
                 this.bill = bill +"\nExtra Toppings For Veg Pizza : 70";
             }else{
+                this.price = this.price + 120;
                 this.bill = bill +"\nExtra Toppings For Non-veg Pizza : 120";
             }
             flag2 = false;
