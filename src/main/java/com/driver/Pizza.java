@@ -20,6 +20,7 @@ public class Pizza {
         this.isVeg = isVeg;
         if(isVeg) this.price = 300;
         else this.price = 400;
+        this.bill = "Base Price Of The Pizza: 300";
         // your code goes here
     }
 
@@ -32,7 +33,7 @@ public class Pizza {
 
         if(flag1 && !isDeluxe){
             this.price = this.price + 80;
-            this.bill = bill + "\nExtra Cheese Price : 80";
+            this.bill = bill + "\nExtra Cheese Added: 80";
             flag1 = false;
         }
 
@@ -45,10 +46,10 @@ public class Pizza {
 
             if(isVeg){
                 this.price = this.price + 70;
-                this.bill = bill +"\nExtra Toppings For Veg Pizza : 70";
+                this.bill = bill +"\nExtra Toppings Added: 70";
             }else{
                 this.price = this.price + 120;
-                this.bill = bill +"\nExtra Toppings For Non-veg Pizza : 120";
+                this.bill = bill +"\nExtra Toppings Added: 120";
             }
             flag2 = false;
         }
@@ -59,14 +60,14 @@ public class Pizza {
 
         if(flag3){
             this.price = this.price + 20;
-            this.bill = bill +"\nPaper bag Price : 20";
+            this.bill = bill +"\nPaperbag Added: 20";
             flag3 = false;
         }
     }
 
     public String getBill(){
         // your code goes here
-        this.bill = this.bill + "\nTotal Price : "+ price;
+        this.bill = this.bill + "\nTotal Price: "+ price;
         return this.bill;
     }
 }
