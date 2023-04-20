@@ -31,7 +31,7 @@ public class Pizza {
     public void addExtraCheese(){
         // your code goes here
 
-        if(flag1 && !isDeluxe){
+        if(flag1){
             this.price = this.price + 80;
             this.bill = bill + "\nExtra Cheese Added: 80";
             flag1 = false;
@@ -42,7 +42,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
 
-        if(flag2 && !isDeluxe){
+        if(flag2){
 
             if(isVeg){
                 this.price = this.price + 70;
@@ -67,7 +67,7 @@ public class Pizza {
 
     public String getBill(){
         // your code goes here
-        this.bill = this.bill + "\nTotal Price: "+ price;
+        this.bill = this.bill + "\nTotal Price: "+ price+'\n';
         return this.bill;
     }
 }
