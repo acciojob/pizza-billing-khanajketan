@@ -7,12 +7,13 @@ public class DeluxePizza extends Pizza {
 
         super.isDeluxe = true;
         if(isVeg){
-            super.setPrice(300);
-            super.setBill("Base Price Of The Pizza: 300");
+            super.setPrice(450);
+            String str = "Base Price Of The Pizza: 300\nExtra Cheese Added: 80\nExtra Toppings Added: 120";
+            super.setBill(str);
         }
         else {
-            super.setPrice(400);
-            super.setBill("Base Price Of The Pizza: 400");
+            super.setPrice(600);
+            super.setBill("Base Price Of The Pizza: 400\n Extra Cheese Added: 80\nExtra Toppings Added: 120");
         }
 
     }
