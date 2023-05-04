@@ -42,7 +42,7 @@ public class Pizza {
     public void addExtraToppings(){
         // your code goes here
 
-        if(flag2){
+        if(flag2 == true){
 
             if(isVeg){
                 this.price = this.price + 70;
@@ -58,7 +58,7 @@ public class Pizza {
     public void addTakeaway(){
         // your code goes here
 
-        if(flag3){
+        if(flag3 == true){
             this.price = this.price + 20;
             this.bill = bill +"\nPaperbag Added: 20";
             flag3 = false;
