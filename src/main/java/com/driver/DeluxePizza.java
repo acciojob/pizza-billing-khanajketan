@@ -7,6 +7,7 @@ public class DeluxePizza extends Pizza {
         flag1 = false;
         flag2 = false;
         flag3 = false;
+
         super.isDeluxe = true;
         if(isVeg){
             super.setPrice(450);

@@ -64,10 +64,15 @@ public class Pizza {
             flag3 = false;
         }
     }
-
+    boolean flag4 = true;
     public String getBill(){
         // your code goes here
-        this.bill = this.bill + "\nTotal Price: "+ this.price+'\n';
+        if(flag4) {
+            this.bill = this.bill + "\nTotal Price: " + this.price + '\n';
+            flag4 = false;
+        }else{
+            return "";
+        }
         return this.bill;
     }
 }
